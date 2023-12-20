@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Module</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./studentModule.css">
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+                <i class="bx bxl-codepen"></i>
+                <span>Student Dashboard</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="https://img.freepik.com/premium-photo/indian-college-student-portrait-with-phone-studio-backpack-university-education-connection-blue-background-happy-man-person-excited-study-learn-future-goals_590464-212509.jpg?w=2000"
+                ,alt="me" class="user-img">
+            <div>
+                <p class="bold">Parag Gupta</p>
+                <p>Admin</p>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Details</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-data'></i>
+                    <span class="nav-item">Updates</span>
+                </a>
+                <span class="tooltip">Updates</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-detail'></i>
+                    <span class="nav-item">Details</span>
+                </a>
+                <span class="tooltip">Details</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-id-card'></i>
+                    <span class="nav-item">Document</span>
+                </a>
+                <span class="tooltip">Document</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a>
+                <span class="tooltip">Setting</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Logout</span>
+            </li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1 style="text-align: center;">Student Portal</h1>
+            <h1>Current Status</h3>
+        </div>
+        <div class="container-detail">
+            <div class="box" id="acceptedBox">
+                <h3 id="status">Accepted: <span id="acceptedCount">2</span></h3>
+            </div>
+            <div class="box" id="appliedBox">
+                <h3 id="status">Applied: <span id="appliedCount">3</span></h3>
+            </div>
+            <div class="box" id="rejectedBox">
+                <h3 id="status">Rejected/Cancelled: <span id="rejectedCount">1</span></h3>
+            </div>
+        </div>
+
+        <h2>Job Applications Display</h2>
+
+    <table border="1">
+        <tr>
+            <th>Company Name</th>
+            <th>Date of Hiring</th>
+            <th>Apply Link</th>
+        </tr>
+        <tr>
+            <td id="displayCompanyName"></td>
+            <td id="displayHireDate"></td>
+            <td id="displayApplyLink"></td>
+        </tr>
+    </table>
+        <!-- <h1 class="tableofcontent">Upcoming Opportunities</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Company Name</th>
+                    <th>Date</th>
+                    <th>Apply Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Company A</td>
+                    <td>2023-01-01</td>
+                    <td><button>Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Company B</td>
+                    <td>2023-01-01</td>
+                    <td><button>Apply</button></td>
+                </tr>
+                <tr>
+                    <td>Company C</td>
+                    <td>2023-01-01</td>
+                    <td><button>Apply</button></td>
+                </tr>
+            </tbody>
+        </table>
+        </table> -->
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
